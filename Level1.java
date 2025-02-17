@@ -97,7 +97,7 @@ class HashTable {
     }
 
     private int hash(double key, int tableSize) {
-        double A = 0.6180339887;
+        double A = 0.618;
         return (int) (tableSize * ((key * A) % 1));
     }
 
@@ -121,7 +121,7 @@ class HashTable {
         }
 
         if (contains(trapezoid)) {
-            System.out.println("Така трапеція вже існує!");
+            System.out.println("Така трапеція вже існує");
             return;
         }
 
